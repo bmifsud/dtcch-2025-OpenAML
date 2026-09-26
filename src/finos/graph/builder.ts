@@ -46,8 +46,7 @@ export class GraphBuilder {
         return this.edges;
     }
 
-    /** Ensure memory efficiency when loading large transaction graphs (>10,000 nodes).
-     * Provides a chunked or streaming way to export graph topology.
+    /** Clear all nodes and edges from the graph.
      */
     clear(): void {
         this.nodes.clear();
